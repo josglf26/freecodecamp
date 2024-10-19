@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<title>Library Survey</title>
+</head>
+<body>
+<main>
+    <header>
+    <h1 id="title" class="header-title">Library Survey</h1>
+    <p id="description" class="header-description">Made for freeCodeCamp!</p>
+    </header>
+
+    <form id="survey-form" class="survey-form">
+    <!-- Name Field -->
+    <div class="form-group">
+        <label id="name-label" class="form-label" for="name">Name</label>
+        <input id="name" class="form-control" name="name" type="text" required placeholder="Enter your name">
+    </div>
+
+    <!-- Email Field -->
+    <div class="form-group">
+        <label id="email-label" class="form-label" for="email">Email</label>
+        <input id="email" class="form-control" name="email" type="email" required placeholder="Enter your email">
+    </div>
+
+    <!-- Age Field -->
+    <div class="form-group">
+        <label id="number-label" class="form-label" for="number">Age</label>
+        <input id="number" class="form-control" name="age" type="number" min="10" max="131" required placeholder="Age">
+    </div>
+
+    <!-- Frequency of Library Visits -->
+    <div class="form-group">
+        <p id='question1' class="form-question">How often do you visit the library?</p>
+        <select id="dropdown" class="form-control" name="frequency" required>
+        <option disabled selected value>Select</option>
+        <option value="daily">Daily</option>
+        <option value="week-several">Several times a week</option>
+        <option value="week-once">Once a week</option>
+        <option value="month-several">Several times a month</option>
+        <option value="month-once">Once a month</option>
+        </select>
+    </div>
+
+    <!-- Accessibility Question -->
+    <div class="form-group">
+        <p class="form-question">When you visit, are you usually able to find what you are looking for?</p>
+        <div class="form-radio-group">
+        <label><input type="radio" name="accessibility" value="always" class="input-radio" checked> Always</label>
+        <label><input type="radio" name="accessibility" value="sometimes" class="input-radio"> Sometimes</label>
+        <label><input type="radio" name="accessibility" value="rarely" class="input-radio"> Rarely</label>
+        <label><input type="radio" name="accessibility" value="never" class="input-radio"> Never</label>
+        </div>
+    </div>
+
+    <!-- Book Availability Question -->
+    <div class="form-group">
+        <p class="form-question">Do you usually find the books and other materials that you are looking for in the library?</p>
+        <div class="form-radio-group">
+        <label><input type="radio" name="accessibility2" value="always" class="input-radio" checked> Always</label>
+        <label><input type="radio" name="accessibility2" value="sometimes" class="input-radio"> Sometimes</label>
+        <label><input type="radio" name="accessibility2" value="rarely" class="input-radio"> Rarely</label>
+        <label><input type="radio" name="accessibility2" value="never" class="input-radio"> Never</label>
+        </div>
+    </div>
+
+    <!-- Reasons for Library Visits -->
+    <div class="form-group">
+        <p class="form-question">Please check all of the reasons you visit the library: (Check all that apply)</p>
+        <div class="form-checkbox-group">
+        <label><input type="checkbox" class="input-checkbox" name="reasons" value="check-return"> To check out / return books</label>
+        <label><input type="checkbox" class="input-checkbox" name="reasons" value="computers"> To use the computers</label>
+        <label><input type="checkbox" class="input-checkbox" name="reasons" value="book-recs"> To get a book recommendation</label>
+        <label><input type="checkbox" class="input-checkbox" name="reasons" value="research"> To do research / find information</label>
+        <label><input type="checkbox" class="input-checkbox" name="reasons" value="class"> To take a class</label>
+        </div>
+    </div>
+
+    <!-- Improvement Suggestion -->
+    <div class="form-group">
+        <p id='question4' class="form-question">Anything you would like to see improve?</p>
+        <textarea cols="30" class="form-control input-textarea" name="comment" placeholder="Enter your comment here..." rows="4"></textarea>
+    </div>
+
+    <!-- Submit Button -->
+    <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">Submit</button>
+    </div>
+    </form>
+</main>
+</body>
+</html>
