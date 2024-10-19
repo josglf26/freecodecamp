@@ -1,2 +1,1 @@
-# freecodecamp
-design web responsive
+lol XD
